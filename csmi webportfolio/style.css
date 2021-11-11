@@ -1,0 +1,38 @@
+#navbar {
+    background-color: #012150;
+}
+
+#nav {
+    background-color: #a3e079;
+    height: 4em;
+}
+
+#slide1 {
+    width: 40%;
+}
+
+#navbar2 {
+    background-image: 'banner 1.jpg';
+}
+
+h5 {
+    text-align: center;
+}
+
+.purple {
+    background-color: #012150;
+    height: 500px;
+    width: 100%;
+}
+
+.purple_img {
+    z-index: 999;
+    position: relative;
+    bottom: 165px
+}
+
+
+/* .purple img {
+    position: absolute;
+    bottom: 0;
+} */
