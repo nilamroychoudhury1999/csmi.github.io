@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <style>
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-font-smoothing: antialiased;
+            -o-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+        
+        body {
+            font-family: "Roboto", Helvetica, Arial, sans-serif;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 30px;
+            color: #777;
+            background: #a3e079;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea,
+        #contact button[type="submit"] {
+            font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+        }
+        
+        #contact {
+            background: #F9F9F9;
+            padding: 25px;
+            margin: 150px 0;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+        
+        #contact h3 {
+            display: block;
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        
+        #contact h4 {
+            margin: 5px 0 15px;
+            display: block;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        
+        fieldset {
+            border: medium none !important;
+            margin: 0 0 10px;
+            min-width: 100%;
+            padding: 0;
+            width: 100%;
+        }
+        
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact input[type="tel"],
+        #contact input[type="url"],
+        #contact textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+        }
+        
+        #contact input[type="text"]:hover,
+        #contact input[type="email"]:hover,
+        #contact input[type="tel"]:hover,
+        #contact input[type="url"]:hover,
+        #contact textarea:hover {
+            -webkit-transition: border-color 0.3s ease-in-out;
+            -moz-transition: border-color 0.3s ease-in-out;
+            transition: border-color 0.3s ease-in-out;
+            border: 1px solid #aaa;
+        }
+        
+        #contact textarea {
+            height: 100px;
+            max-width: 100%;
+            resize: none;
+        }
+        
+        #contact button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #4CAF50;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+        
+        #contact button[type="submit"]:hover {
+            background: #43A047;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        #contact button[type="submit"]:active {
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .copyright {
+            text-align: center;
+        }
+        
+        #contact input:focus,
+        #contact textarea:focus {
+            outline: 0;
+            border: 1px solid #aaa;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: #888;
+        }
+        
+         :-moz-placeholder {
+            color: #888;
+        }
+        
+         ::-moz-placeholder {
+            color: #888;
+        }
+        
+         :-ms-input-placeholder {
+            color: #888;
+            @media screen {
+                max-width: 800px;
+            }
+    </style>
+
+</head>
+<section id="nav">
+    <a class="navbar-brand" href="#"><img src="" alt=""></a>
+</section>
+<nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 3em;font-family: bahnschrift bold; font-size:1.1em;">
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079;  ">HOME</a>
+                </li>
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079;">ABOUT US</a>
+                </li>
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079; ">SERVICES</a>
+                </li>
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079; ">PORTFOLIO</a>
+                </li>
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079; ">OUR CLINTS</a>
+                </li>
+                <li class="nav-item" style="margin-right: 64px; ">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: #a3e079; ">CONTACT US</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <div style="padding-right: 64px;">
+                    <button class="btn btn-outline-success" style="color: #012150; background-color:  #a3e079; ">BOOK NOW</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <h3>Book Now Form</h3>
+    <div class="container">
+        <form id="contact" action="" method="post" style="background-image:url('csmi banner.jpg'); height: 100%;">
+            <h3>Book Now Form</h3>
+            <h4>Contact us for custom quote</h4>
+            <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number " type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Category " type="tel" tabindex="3" required>
+            </fieldset>
+
+            <fieldset>
+                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Book Now</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
